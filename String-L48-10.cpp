@@ -13,13 +13,13 @@ int main()
     string s = "aad";
     string t = "bbd";
 
-    cout << checkAnagram(s , t) << endl;
+    (checkAnagram(s , t)) ? cout << "True" << endl : cout << "false" << endl;
     return 0;
 }
 
 bool checkAnagram(string &s1 , string &s2){
     // we can solve this with creating single array as 
-    // do ++ for s1 and -- for s2.
+    // do ++ for s1 and --> for s2.
     // if some element left +ve s1 have extra alphabets and if -ve left s2 have an extra alphabet
 
     if(s1.size() != s2.size()) return false;
